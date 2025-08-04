@@ -68,7 +68,7 @@ var CommonIgnorePatterns = []string{
 
 type DirectoryLister struct {
 	gitignore    *ignore.GitIgnore
-	crushignore  *ignore.GitIgnore
+	nexusignore  *ignore.GitIgnore
 	commonIgnore *ignore.GitIgnore
 	rootPath     string
 }
