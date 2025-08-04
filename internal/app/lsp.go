@@ -5,9 +5,9 @@ import (
 	"log/slog"
 	"time"
 
-	"github.com/charmbracelet/crush/internal/log"
-	"github.com/charmbracelet/crush/internal/lsp"
-	"github.com/charmbracelet/crush/internal/lsp/watcher"
+	"github.com/hadipt/RevoCLI/internal/log"
+	"github.com/hadipt/RevoCLI/internal/lsp"
+	"github.com/hadipt/RevoCLI/internal/lsp/watcher"
 )
 
 // initLSPClients initializes LSP clients.
