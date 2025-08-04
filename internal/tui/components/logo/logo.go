@@ -319,6 +319,49 @@ func letterU(stretch bool) string {
 	)
 }
 
+
+
+func letterV(stretch bool) string {
+    return heredoc.Doc(`
+        █   █
+         █ █
+          █
+    `)
+}
+
+// Stylized wide letter O (stretched)
+func letterOStylized(stretch bool) string {
+    // This is wider than usual for emphasis
+    return heredoc.Doc(`
+        ▄▀▀▀▀▀▀▀▄
+        █       █
+        █       █
+        ▀▄▄▄▄▄▄▄▀
+    `)
+}
+
+// Stylized letter L
+func letterL(stretch bool) string {
+    return heredoc.Doc(`
+        █
+        █
+        █▄▄▄
+    `)
+}
+
+// Stylized letter I
+func letterI(stretch bool) string {
+    return heredoc.Doc(`
+        ▀█▀
+         █
+        ▄█▄
+    `)
+}
+
+// Helper for a space
+func letterSpace(stretch bool) string {
+    return "   "
+}
 func joinLetterform(letters ...string) string {
 	return lipgloss.JoinHorizontal(lipgloss.Top, letters...)
 }
