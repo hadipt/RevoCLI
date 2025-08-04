@@ -36,7 +36,7 @@ type Opts struct {
 // The compact argument determines whether it renders compact for the sidebar
 // or wider for the main pane.
 func Render(version string, compact bool, o Opts) string {
-	const charm = " RevoSoft"
+	const charm = " Charm™"
 
 	fg := func(c color.Color, s string) string {
 		return lipgloss.NewStyle().Foreground(c).Render(s)
@@ -45,14 +45,11 @@ func Render(version string, compact bool, o Opts) string {
 	// Title.
 	const spacing = 1
 	letterforms := []letterform{
-		letterR,
-		letterE,
-		letterV,
-		letterOStylized,
-		letterSpace,
 		letterC,
-                letterL,
-		letterI,
+		letterR,
+		letterU,
+		letterSStylized,
+		letterH,
 	}
 	stretchIndex := -1 // -1 means no stretching.
 	if !compact {
@@ -319,49 +316,6 @@ func letterU(stretch bool) string {
 	)
 }
 
-
-
-func letterV(stretch bool) string {
-    return heredoc.Doc(`
-        █   █
-         █ █
-          █
-    `)
-}
-
-// Stylized wide letter O (stretched)
-func letterOStylized(stretch bool) string {
-    // This is wider than usual for emphasis
-    return heredoc.Doc(`
-        ▄▀▀▀▀▀▀▀▄
-        █       █
-        █       █
-        ▀▄▄▄▄▄▄▄▀
-    `)
-}
-
-// Stylized letter L
-func letterL(stretch bool) string {
-    return heredoc.Doc(`
-        █
-        █
-        █▄▄▄
-    `)
-}
-
-// Stylized letter I
-func letterI(stretch bool) string {
-    return heredoc.Doc(`
-        ▀█▀
-         █
-        ▄█▄
-    `)
-}
-
-// Helper for a space
-func letterSpace(stretch bool) string {
-    return "   "
-}
 func joinLetterform(letters ...string) string {
 	return lipgloss.JoinHorizontal(lipgloss.Top, letters...)
 }
