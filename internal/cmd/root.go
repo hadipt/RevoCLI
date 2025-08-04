@@ -29,29 +29,29 @@ func init() {
 }
 
 var rootCmd = &cobra.Command{
-	Use:   "crush",
+	Use:   "revo",
 	Short: "Terminal-based AI assistant for software development",
-	Long: `Crush is a powerful terminal-based AI assistant that helps with software development tasks.
+	Long: `RevoCLI "Nexus" is a powerful terminal-based AI assistant that helps with software development tasks.
 It provides an interactive chat interface with AI capabilities, code analysis, and LSP integration
 to assist developers in writing, debugging, and understanding code directly from the terminal.`,
 	Example: `
 # Run in interactive mode
-crush
+nexus
 
 # Run with debug logging
-crush -d
+nexus -d
 
 # Run with debug logging in a specific directory
-crush -d -c /path/to/project
+nexus -d -c /path/to/project
 
 # Print version
-crush -v
+nexus -v
 
 # Run a single non-interactive prompt
-crush run "Explain the use of context in Go"
+nexus run "Explain the use of context in Go"
 
 # Run in dangerous mode (auto-accept all permissions)
-crush -y
+nexus -y
   `,
 	RunE: func(cmd *cobra.Command, args []string) error {
 		app, err := setupApp(cmd)
