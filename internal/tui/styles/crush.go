@@ -6,7 +6,7 @@ import (
 
 func NewCrushTheme() *Theme {
 	return &Theme{
-		Name:   "crush",
+		Name:   "nexus",
 		IsDark: true,
 
 		Primary:   charmtone.Charple,
