@@ -61,7 +61,7 @@ func ProjectNeedsInitialization() (bool, error) {
 	return true, nil
 }
 
-func crushMdExists(dir string) (bool, error) {
+func nexusMdExists(dir string) (bool, error) {
 	entries, err := os.ReadDir(dir)
 	if err != nil {
 		return false, err
