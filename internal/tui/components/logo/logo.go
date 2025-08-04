@@ -36,7 +36,7 @@ type Opts struct {
 // The compact argument determines whether it renders compact for the sidebar
 // or wider for the main pane.
 func Render(version string, compact bool, o Opts) string {
-	const charm = " Charm™"
+	const charm = " RevoCLI™"
 
 	fg := func(c color.Color, s string) string {
 		return lipgloss.NewStyle().Foreground(c).Render(s)
@@ -45,11 +45,11 @@ func Render(version string, compact bool, o Opts) string {
 	// Title.
 	const spacing = 1
 	letterforms := []letterform{
-		letterC,
-		letterR,
-		letterU,
-		letterSStylized,
-		letterH,
+		letterN,
+		letterE,
+		letterX,
+		letterUStylized,
+		letterS,
 	}
 	stretchIndex := -1 // -1 means no stretching.
 	if !compact {
