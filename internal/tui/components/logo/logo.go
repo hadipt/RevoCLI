@@ -45,11 +45,14 @@ func Render(version string, compact bool, o Opts) string {
 	// Title.
 	const spacing = 1
 	letterforms := []letterform{
-		letterC,
 		letterR,
-		letterU,
-		letterSStylized,
-		letterH,
+		letterE,
+		letterV,
+		letterOStylized,
+		letterSpace,
+		letterC,
+                letterL
+		letterI
 	}
 	stretchIndex := -1 // -1 means no stretching.
 	if !compact {
