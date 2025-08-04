@@ -18,10 +18,10 @@ The prompt can be provided as arguments or piped from stdin.`,
 crush run Explain the use of context in Go
 
 # Pipe input from stdin
-echo "What is this code doing?" | crush run
+echo "What is this code doing?" | nexus run
 
 # Run with quiet mode (no spinner)
-crush run -q "Generate a README for this project"
+nexus run -q "Generate a README for this project"
   `,
 	RunE: func(cmd *cobra.Command, args []string) error {
 		quiet, _ := cmd.Flags().GetBool("quiet")
